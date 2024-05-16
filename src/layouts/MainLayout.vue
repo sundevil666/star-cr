@@ -95,22 +95,22 @@ function toggleLeftDrawer () {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 }
 
-const audio = new Audio();
-audio.src = 'src/assets/audio/soundtrack.mp3';
-audio.loop = true;
-audio.volume = 0.5;
-
-audio.onloadeddata = () => {
-  audio.currentTime = Math.random() * (audio.duration + 1);
-};
-
-const setMusic = () => {
-  if (toggleMusic.value) {
-    audio.play();
-  } else {
-    audio.pause();
-  }
-};
+// const audio = new Audio();
+// audio.src = 'src/assets/audio/soundtrack.mp3';
+// audio.loop = true;
+// audio.volume = 0.5;
+//
+// audio.onloadeddata = () => {
+//   audio.currentTime = Math.random() * (audio.duration + 1);
+// };
+//
+// const setMusic = () => {
+//   if (toggleMusic.value) {
+//     audio.play();
+//   } else {
+//     audio.pause();
+//   }
+// };
 </script>
 
 <style lang="sass">
